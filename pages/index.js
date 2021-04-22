@@ -9,19 +9,21 @@ export default function Home() {
       </Head>
 
       <main className="bg-[#090b1a] min-h-screen flex flex-wrap items-center justify-center text-white font-body">
-        <div className="bg-[#1b1938] max-w-6xl rounded-xl grid grid-cols-2 mx-12 my-16 overflow-hidden">
-          <img
-            src="/image-header-mobile.jpg"
-            className="bg-cover col-span-2 lg:col-span-1 min-w-full md:min-h-full lg:hidden"
-            alt=""
+        <div className="bg-[#1b1938] max-w-6xl rounded-lg grid grid-cols-2 mx-12 my-16 overflow-hidden">
+          <div
+            className="col-span-2 lg:col-span-1 min-w-full bg-cover max-h-full h-72 block lg:hidden"
             style={{
-              backgroundColor: "#aa5cdb",
+              backgroundImage: `url('/image-header-mobile.jpg')`,
+              backgroundColor: "rgba(170,92,219,1)",
+              backgroundBlendMode: "multiply",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center, center",
             }}
-          />
-          <div className="lg:px-20 px-10 lg:pt-20 pt-7 pb-12 col-span-2 lg:col-span-1 text-center lg:text-left">
-            <h1 className="text-4xl font-bold mb-7">
-              Get <span className="text-[#aa5cdb]">insights</span> that help
-              your business grow.
+          ></div>
+          <div className="lg:px-20 px-10 lg:pt-20 pt-9 pb-12 col-span-2 lg:col-span-1 text-center lg:text-left">
+            <h1 className="lg:text-4xl text-3xl font-bold mb-7">
+              Get <span className="text-[#aa5cdb] leading-3">insights</span>{" "}
+              that help your business grow.
             </h1>
             <p className="mb-2 lg:mb-7 opacity-75 leading-7 text-[15px]">
               Discover the benefits of data analytics and make better decisions
@@ -48,14 +50,14 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <img
-            src="/image-header-desktop.jpg"
+          <div
             className="bg-cover col-span-2 lg:col-span-1 min-w-full md:min-h-full hidden lg:block"
-            alt=""
             style={{
-              backgroundColor: "#aa5cdb",
+              backgroundImage: `url('/image-header-desktop.jpg')`,
+              backgroundColor: "rgba(170,92,219,1)",
+              backgroundBlendMode: "multiply",
             }}
-          />
+          ></div>
         </div>
       </main>
     </div>
